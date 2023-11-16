@@ -2,12 +2,82 @@ import './App.css'
 
 function App(){
   return (
-    <>
+    <div className='grid'>
       <div className='card'>
         <h2>Rick and morty</h2>
-        <img src="data:image/jpeg;base64,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" alt="Rick and morty"/>
+        <div className="tags">
+          <div className="tag">Name: Rick sanchez</div>
+          <div className="tag">Age: 70 years</div>
+          <div className="tag">Tipo: Comédia e ficção científica </div>
+        </div>
+        <img src="https://i.pinimg.com/736x/b8/5b/3f/b85b3f85abbd145e3ee594e69dfe7568.jpg" alt="Rick, of Rick and morty"/>
       </div>
-    </>
+      <div className='card'>
+        <h2>The Simpsons</h2>
+        <div className="tags">
+          <div className="tag">Name: Bart Simpson</div>
+          <div className="tag">Age: 10 years</div>
+          <div className="tag">Tipo: animação e sitcom </div>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/537699494/BartSimpson.jpg"/>
+      </div>
+      <div className='card'>
+        <h2>Rick and morty</h2>
+        <div className="tags">
+          <div className="tag">Name: Rick sanchez</div>
+          <div className="tag">Age: 70 years</div>
+          <div className="tag">Tipo: Comédia e ficção científica </div>
+        </div>
+        <img src="https://i.pinimg.com/736x/b8/5b/3f/b85b3f85abbd145e3ee594e69dfe7568.jpg" alt="Rick, of Rick and morty"/>
+      </div>
+      <div className='card'>
+        <h2>The Simpsons</h2>
+        <div className="tags">
+          <div className="tag">Name: Bart Simpson</div>
+          <div className="tag">Age: 10 years</div>
+          <div className="tag">Tipo: animação e sitcom </div>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/537699494/BartSimpson.jpg"/>
+      </div>
+      <div className='card'>
+        <h2>Rick and morty</h2>
+        <div className="tags">
+          <div className="tag">Name: Rick sanchez</div>
+          <div className="tag">Age: 70 years</div>
+          <div className="tag">Tipo: Comédia e ficção científica </div>
+        </div>
+        <img src="https://i.pinimg.com/736x/b8/5b/3f/b85b3f85abbd145e3ee594e69dfe7568.jpg" alt="Rick, of Rick and morty"/>
+      </div>
+      <div className='card'>
+        <h2>The Simpsons</h2>
+        <div className="tags">
+          <div className="tag">Name: Bart Simpson</div>
+          <div className="tag">Age: 10 years</div>
+          <div className="tag">Tipo: animação e sitcom </div>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/537699494/BartSimpson.jpg"/>
+      </div>
+      <div className='card'>
+        <h2>Rick and morty</h2>
+        <div className="tags">
+          <div className="tag">Name: Rick sanchez</div>
+          <div className="tag">Age: 70 years</div>
+          <div className="tag">Tipo: Comédia e ficção científica </div>
+        </div>
+        <img src="https://i.pinimg.com/736x/b8/5b/3f/b85b3f85abbd145e3ee594e69dfe7568.jpg" alt="Rick, of Rick and morty"/>
+      </div>
+      <div className='card'>
+        <h2>The Simpsons</h2>
+        <div className="tags">
+          <div className="tag">Name: Bart Simpson</div>
+          <div className="tag">Age: 10 years</div>
+          <div className="tag">Tipo: animação e sitcom </div>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/537699494/BartSimpson.jpg"/>
+      </div>
+    </div>
+    
+    
   )
 }
 
