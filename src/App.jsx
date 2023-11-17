@@ -2,7 +2,7 @@ import './App.css'
 
 function App(){
   return (
-    <><h1> Colection Cards personalizados</h1>
+    <><h1 id='titulo_principal'>Personalized Card Collection</h1>
     <div className='grid'>
       <div className='card'>
         <h2>Rick and morty</h2>
